@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Usuarios Web Docker</title>
+</head>
+<body>
+	<header>
+		<th3>Información de Usuarios</th3>
+	</header>
+	<section>
+		<div th:each="user : ${users}">
+			<b th:text="${user.name}"></b>
+			<b th:text="${user.age}"></b>
+		</div>
+	</section>
+
+</body>
+</html>
